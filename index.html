@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+  	<h1>Hello world</h1>
+
+	<!-- Make sure that the external libaires that you are using for scripts come before your custom scripts.
+	This is because if you don't load the libary before you start writting your code, the browser won't know what you are referencing. -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  	<script type="text/javascript">
+  		
+  		// When the page is loaded, do this stuff
+  		$(document).ready(function(){
+  			// Function means to do stuff
+  			// Semi columns are required at the end of methods like a full stop at the end of a sentence
+  			// 1. Write the function
+  			function alertThenTwoConsoleLogs () {
+  				alert('Boom!!!!!');
+  				console.log('Hello World! It is Tuesday My dudes');
+  				console.log('another message');
+  			}
+	
+  			
+	
+  			// To 
+  			console.log($)
+  			// $('h1').hide(3000);
+	
+  			// THis is a call back function
+  			$('h1').hide(3000, function(){
+  				// after 3 seconds, this going to do stuff
+  				alert('It worked fam. Round of applaus all round')
+	
+  				// call or invoke the function
+  				// common mistake is that people create the function but forget to trigger the function
+  				// 2. Call the function. Make sure that you end the function with 2 parentheses and semi colon
+  				alertThenTwoConsoleLogs();
+  			});
+  		}); //Document Ready ends
+
+  	</script>
+  	<!-- Links to external scripts will be linked at the bottom of the document -->
+  </body>
+</html>
